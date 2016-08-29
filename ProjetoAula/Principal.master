@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="estilo.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style2 {
+            width: 593px;
+            height: 164px;
+        }
+        </style>
+</head>
+<body>
+
+  <form id="form1" runat="server">
+    <div>
+        <section>
+            <img alt="" class="auto-style2" src="imagens/milho-617x330.jpg" /><br />
+            <br />
+            <br />
+            <br />
+&nbsp;<img alt="" class="auto-style2" src="imagens/milharal.jpg" /></section>
+    </div>
+      
+    <div>
+        <section>
+            <div id='cssmenu'>
+                <ul>
+                  	<li class='active'><a href='Index.aspx'>Home</a></li>
+                   	<li><a href='Filmes.aspx'>Filmes</a></li>
+                   	<li><a href='Ingressos.aspx'>Ingressos Online</a></li>
+                    <li><a href='Logar.aspx'>Acessando sua conta</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <section>
+       <div id="rodape">Meu RODAPÉ</div>
+    </section>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
