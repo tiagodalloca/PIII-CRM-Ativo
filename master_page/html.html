@@ -1,0 +1,55 @@
+<html>
+
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta charset=utf-8>
+
+</head>
+
+
+
+<body onload="carrega();" onscroll="rolou();">
+
+
+    <div id="menu" class="menu">
+
+        <div id="item_menu1" class="item_menu">
+            <div class="celula">O ERP</div>
+        </div>
+        <div id="item_menu2" class="item_menu">
+            <div class="celula">Mude seu milho</div>
+        </div>
+        <div id="item_menu3" class="item_menu">
+            <div class="celula">Histórias de sucesso</div>
+        </div>
+        <div id="item_menu4" class="item_menu">
+            <div class="celula">Localização e Contato</div>
+        </div>
+
+
+    </div>
+
+    <div class="filtro"></div>
+    <img id="imagem" class="ponte">
+    <div class="logo"><a class="meio">Emilhão</a></div>
+    <center>
+        <div class="sub_logo">Seu milho, ainda mais amarelo</div>
+    </center>
+
+
+    <script type="text/javascript">
+    var pos; var fot; var linha = "Poty"; var roda; var pag; var intervalo; function carrega() { try { var mapCanvas = document.getElementById('map-canvas'); var mapOptions = { center: new google.maps.LatLng(-13.377001, -38.917688), zoom: 15, mapTypeId: google.maps.MapTypeId.ROADMAP
+} var map = new google.maps.Map(mapCanvas, mapOptions); } catch (e) { document.getElementById('map-canvas').innerHTML = '<img id="imagem" style="height: 100%; width: 100%;" src="mapa.png">'; } pos = document.getElementById("menu").offsetTop; document.getElementById("menu").setAttribute("class",
+"menu"); document.getElementById("div1").setAttribute("style", "top:20%;"); fot = 1; scrollTo(0, 0); pag = 0; intervalo = setInterval(function() { foto() }, 3000); }
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+</body>
+
+
+</html>
