@@ -57,7 +57,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CadastroCRM.aspx" />
     <Content Include="Principal.Master" />
+    <Content Include="CadastroCRM.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -72,6 +74,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroCRM.aspx.cs">
+      <DependentUpon>CadastroCRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroCRM.aspx.designer.cs">
+      <DependentUpon>CadastroCRM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroCRM.Master.cs">
+      <DependentUpon>CadastroCRM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CadastroCRM.Master.designer.cs">
+      <DependentUpon>CadastroCRM.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
