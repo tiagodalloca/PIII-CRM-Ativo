@@ -10,3 +10,9 @@ G:\PIII-CRM-Ativo\ASP\ASP\bin\ASP.pdb
 G:\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.csprojResolveAssemblyReference.cache
 G:\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.dll
 G:\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.pdb
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll.config
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\bin\ASP.pdb
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.csprojResolveAssemblyReference.cache
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.dll
+F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.pdb
