@@ -9,6 +9,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link href="css.css" rel="stylesheet" />
+    <script type="text/javascript" src="js.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,8 +30,25 @@
                 <div id="item_menu4" class="item_menu">
                     <div class="celula">Localização e Contato</div>
                 </div>
+                <div id="item_menu5" class="item_menu">
+                    <div class="celula" onclick="login();">Login</div>
+                </div>
 
+                <div id="item_menu6">
+                    <table>
+                      <tr>
+                        <th>Usuario:</th><td><input type="text" name="nomeEnt" placeholder="José Da Silva"></td>
+                      </tr>
 
+                      <tr>
+                        <th>Senha:</th><td><input type="password" name="senhaEnt" placeholder="********"></td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2"><input type="submit" name="entrar" class="btnEntrar" value="Entrar"></td>
+                      </tr>
+                    </table>
+                </div>
             </div>
         </section>
 
@@ -44,6 +62,9 @@
             </center>
         </section>
 
+        <section>
+            
+        </section>
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
         </asp:ContentPlaceHolder>

@@ -5,14 +5,33 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <link href="css.css" rel="stylesheet" />
 </head>
-<body>
+<body background="emilhao.jpg">
     <form id="form1" runat="server">
     <div>
+        <section>
+            <div id="menu" class="menu">
+                <div id="item_menu1" class="item_menu">
+                    <div class="celula">O ERP</div>
+                </div>
+                <div id="item_menu2" class="item_menu">
+                    <div class="celula">Mude seu milho</div>
+                </div>
+                <div id="item_menu3" class="item_menu">
+                    <div class="celula">Cadastros</div>
+                </div>
+                <div id="item_menu4" class="item_menu">
+                    <div class="celula">Acesso ao Atendimento</div>
+                </div>
+            </div>
+        </section>
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
         </asp:ContentPlaceHolder>
     </div>
     </form>

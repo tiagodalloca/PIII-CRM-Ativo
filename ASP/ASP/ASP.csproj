@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="AcessoCRM.aspx" />
     <Content Include="CadastroCRM.aspx" />
+    <Content Include="js.js" />
     <Content Include="Principal.Master" />
     <Content Include="CadastroCRM.Master" />
     <None Include="Web.Debug.config">
