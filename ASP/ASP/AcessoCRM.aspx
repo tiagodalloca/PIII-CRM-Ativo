@@ -10,6 +10,16 @@
             font-size: medium;
             font-weight: bold;
         }
+        ul{
+            position: relative;
+            left: 190px;
+          }
+        ul2
+        {
+            position : relative;
+            left : 570px;
+        }
+        
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -19,7 +29,11 @@
         <br />
     </p>
     <p>
-        <asp:GridView ID="id1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="idAtendimento" DataSourceID="dt1" GridLines="Vertical"  Width="283px" Height="189px">
+        &nbsp;&nbsp;&nbsp;
+
+        <ul2> <font size="6">Informações do Atendimento : <br><br></font></ul2>
+        <ul>
+        <asp:GridView ID="id1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="idAtendimento" DataSourceID="dt1" GridLines="Vertical"  Width="1px" Height="1px">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
                 <asp:BoundField DataField="idAtendimento" HeaderText="idAtendimento" InsertVisible="False" ReadOnly="True" SortExpression="idAtendimento" />
@@ -41,7 +55,7 @@
             <SortedAscendingHeaderStyle BackColor="#0000A9" />
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#000065" />
-        </asp:GridView>
+        </asp:GridView></ul>
         <asp:SqlDataSource ID="dt1" runat="server" ConnectionString="<%$ ConnectionStrings:ERPConnectionString %>" SelectCommand="SELECT * FROM [Atendimento]"></asp:SqlDataSource>
         &nbsp;</p>
     </asp:Content>
