@@ -13,13 +13,31 @@ namespace ASP {
     public partial class CadastroCRM1 {
         
         /// <summary>
-        /// txtDescAtend control.
+        /// cbxTabelas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescAtend;
+        protected global::System.Web.UI.WebControls.DropDownList cbxTabelas;
+        
+        /// <summary>
+        /// txtTexto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtTexto;
+        
+        /// <summary>
+        /// lblGrande control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblGrande;
         
         /// <summary>
         /// btnCadSitAtend control.
@@ -31,75 +49,12 @@ namespace ASP {
         protected global::System.Web.UI.WebControls.Button btnCadSitAtend;
         
         /// <summary>
-        /// txtTipoAtend control.
+        /// btnLimpar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTipoAtend;
-        
-        /// <summary>
-        /// btnCadastrarTipoAtendimento control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadastrarTipoAtendimento;
-        
-        /// <summary>
-        /// txtSitPed control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSitPed;
-        
-        /// <summary>
-        /// btnCadSit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadSit;
-        
-        /// <summary>
-        /// txtDescProd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescProd;
-        
-        /// <summary>
-        /// btnCadDescProd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadDescProd;
-        
-        /// <summary>
-        /// txtDescServ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescServ;
-        
-        /// <summary>
-        /// btnCadDescServ control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCadDescServ;
+        protected global::System.Web.UI.WebControls.Button btnLimpar1;
     }
 }

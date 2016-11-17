@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/CadastroCRM.Master" AutoEventWireup="true" CodeBehind="CadastroCRM.aspx.cs" Inherits="ASP.CadastroCRM1" %>
+﻿<%@ Page Title="Cadastros do CRM" Language="C#" MasterPageFile="~/CadastroCRM.Master" AutoEventWireup="true" CodeBehind="CadastroCRM.aspx.cs" Inherits="ASP.CadastroCRM1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -25,80 +25,30 @@
     <center>
         <table class="auto-style1" style="color: #800000; text-align: center; border-spacing: inherit" border="0">
         <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Descrição do atendimento</h2></td>
+            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Cadastro de:</h2></td>
+        </tr>
+        <tr>
+            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>
+                <asp:DropDownList ID="cbxTabelas" runat="server">
+                    <asp:ListItem Value="LI1">Descrição de atendimento</asp:ListItem>
+                    <asp:ListItem Value="LI2">Tipo de Atendimento</asp:ListItem>
+                    <asp:ListItem Value="LI3">Situação de pedido</asp:ListItem>
+                    <asp:ListItem Value="LI4">Categoria de produto</asp:ListItem>
+                    <asp:ListItem Value="LI5">Categoria de serviço</asp:ListItem>
+                </asp:DropDownList>
+                </h2></td>
         </tr>
         <tr>
             <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:TextBox ID="txtDescAtend" runat="server" MaxLength="40" Width="174px"></asp:TextBox>
+                <asp:TextBox ID="txtTexto" runat="server" MaxLength="50" Width="174px"></asp:TextBox>
+                <br />
+                <asp:Label ID="lblGrande" runat="server" Text="Digite no máximo 40 caracteres" Visible="False"></asp:Label>
             </td>
         </tr>
         <tr>
             <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
                 <asp:Button ID="btnCadSitAtend" runat="server" Text="Cadastrar" Font-Bold="True" Font-Size="Medium" OnClick="btnCadSitAtend_Click" />
-                <input id="Reset1" type="reset" class="btn-Reset" value="reset" /></td>
-        </tr>
-    </table>&nbsp;&nbsp;&nbsp;&nbsp;
-    <table class="auto-style1" style="color: #800000; text-align: center; border-spacing: inherit" border="0">
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Tipo do atendimento</h2></td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:TextBox ID="txtTipoAtend" runat="server" MaxLength="40" Width="174px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:Button ID="btnCadastrarTipoAtendimento" runat="server" Text="Cadastrar" Font-Bold="True" Font-Size="Medium" OnClick="btnCadastrarTipoAtendimento_Click"/>
-                <input id="Reset2" type="reset" class="btn-Reset" value="reset" />
-            </td>
-        </tr>
-    </table>&nbsp;&nbsp;&nbsp;&nbsp;
-    <table class="auto-style1" style="color: #800000; text-align: center; border-spacing: inherit" border="0">
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Situação de pedido</h2></td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:TextBox ID="txtSitPed" runat="server" MaxLength="40" Width="174px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:Button ID="btnCadSit" runat="server" Text="Cadastrar" Font-Bold="True" Font-Size="Medium" OnClick="btnCadSit_Click"/>
-                <input id="Reset3" type="reset" class="btn-Reset" value="reset" />
-            </td>
-        </tr>
-    </table>&nbsp;&nbsp;&nbsp;&nbsp;
-    <table class="auto-style1" style="color: #800000; text-align: center; border-spacing: inherit" border="0">
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Descrição do produto</h2></td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:TextBox ID="txtDescProd" runat="server" MaxLength="40" Width="174px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:Button ID="btnCadDescProd" runat="server" Text="Cadastrar" Font-Bold="True" Font-Size="Medium" OnClick="btnCadDescProd_Click"/>
-                <input id="Reset4" type="reset" class="btn-Reset" value="reset" />
-            </td>
-        </tr>
-    </table>&nbsp;&nbsp;&nbsp;&nbsp;
-    <table class="auto-style1" style="color: #800000; text-align: center; border-spacing: inherit" border="0">
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;"><h2>Descrição do serviço</h2></td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:TextBox ID="txtDescServ" runat="server" MaxLength="40" Width="174px"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style2" style="border-color: #FF9966; background-color: #FFCC99; color: #800000; font-family: Georgia;">
-                <asp:Button ID="btnCadDescServ" runat="server" Text="Cadastrar" Font-Bold="True" Font-Size="Medium" OnClick="btnCadDescServ_Click" />
-                <input id="Reset5" type="reset" class="btn-Reset" value="reset" />
+                <asp:Button ID="btnLimpar1" runat="server" Text="Limpar" Font-Bold="True" Font-Size="Medium" OnClick="btnLimpar1_Click" />
             </td>
         </tr>
     </table>

@@ -11,55 +11,29 @@ namespace ASP
     public partial class CadastroCRM1 : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection("Data Source=regulus;Initial Catalog=ERP;Persist Security Info=True;User ID=ERP;Password=ERP2016");
+        static readonly string[] tabelas = { "SituacaoAtendimento", "TipoAtendimento", "SituacaoPedido", "CategoriaProduto", "CategoriaServico" };
+        static readonly int[] lengths = { 40, 40, 40, 50, 50 };
 
         protected void btnCadSitAtend_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlCommand sql = new SqlCommand("INSERT INTO SituacaoAtendimento VALUES(@desc)", conn);
-            sql.Parameters.AddWithValue("@desc", txtDescAtend.Text);
-            sql.ExecuteNonQuery();
-            conn.Close();
-            txtDescAtend.Text = "";
+            if (txtTexto.Text.Length < lengths[cbxTabelas.SelectedIndex])
+            {
+                lblGrande.Visible = false;
+                conn.Open();
+                SqlCommand sql = new SqlCommand("INSERT INTO " + tabelas[cbxTabelas.SelectedIndex] + " VALUES(@desc)", conn);
+                sql.Parameters.AddWithValue("@desc", txtTexto.Text);
+                sql.ExecuteNonQuery();
+                conn.Close();
+                txtTexto.Text = "";
+            }
+            else
+                lblGrande.Visible = true;
         }
 
-        protected void btnCadastrarTipoAtendimento_Click(object sender, EventArgs e)
+        protected void btnLimpar1_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlCommand sql = new SqlCommand("INSERT INTO TipoAtendimento VALUES(@desc)", conn);
-            sql.Parameters.AddWithValue("@desc", txtTipoAtend.Text);
-            sql.ExecuteNonQuery();
-            conn.Close();
-            txtTipoAtend.Text = "";
-        }
-
-        protected void btnCadSit_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            SqlCommand sql = new SqlCommand("INSERT INTO SituacaoPedido VALUES(@desc)", conn);
-            sql.Parameters.AddWithValue("@desc", txtSitPed.Text);
-            sql.ExecuteNonQuery();
-            conn.Close();
-            txtSitPed.Text = "";
-        }
-
-        protected void btnCadDescProd_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            SqlCommand sql = new SqlCommand("INSERT INTO CategoriaProduto VALUES(@desc)", conn);
-            sql.Parameters.AddWithValue("@desc", txtDescProd.Text);
-            sql.ExecuteNonQuery();
-            conn.Close();
-            txtDescProd.Text = "";
-        }
-
-        protected void btnCadDescServ_Click(object sender, EventArgs e)
-        {
-            conn.Open();
-            SqlCommand sql = new SqlCommand("INSERT INTO CategoriaServico VALUES(@desc)", conn);
-            sql.Parameters.AddWithValue("@desc", txtDescServ.Text);
-            sql.ExecuteNonQuery();
-            conn.Close();
-            txtDescServ.Text = "";
+            txtTexto.Text = "";
+            lblGrande.Visible = false;
         }
     }
 }
