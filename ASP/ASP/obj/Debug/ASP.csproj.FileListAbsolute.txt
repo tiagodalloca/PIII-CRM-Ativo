@@ -16,3 +16,15 @@ F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\bin\ASP.pdb
 F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.csprojResolveAssemblyReference.cache
 F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.dll
 F:\4oSemestreAtivo\Pratica\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.pdb
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll.config
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.pdb
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.csprojResolveAssemblyReference.cache
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.dll
+F:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.pdb
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll.config
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.dll
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\bin\ASP.pdb
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.csprojResolveAssemblyReference.cache
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.dll
+G:\segundo semestre\ensino técnico\Prática Profissional\PIII-CRM-Ativo\ASP\ASP\obj\Debug\ASP.pdb

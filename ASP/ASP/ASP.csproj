@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AcessoCRM.aspx" />
     <Content Include="CadastroCRM.aspx" />
     <Content Include="Principal.Master" />
     <Content Include="CadastroCRM.Master" />
@@ -74,6 +75,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcessoCRM.aspx.cs">
+      <DependentUpon>AcessoCRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcessoCRM.aspx.designer.cs">
+      <DependentUpon>AcessoCRM.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CadastroCRM.aspx.cs">
       <DependentUpon>CadastroCRM.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
