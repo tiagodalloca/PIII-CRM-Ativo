@@ -37,15 +37,28 @@
                 <div id="item_menu6">
                     <table>
                       <tr>
-                        <th>Usuario:</th><td><input type="text" name="nomeEnt" placeholder="José Da Silva"></td>
+                          <th>Usuario:</th><td><asp:TextBox id="txtNome" runat="server" name="nomeEnt" placeholder="José Da Silva"></asp:TextBox></td>
                       </tr>
 
                       <tr>
-                        <th>Senha:</th><td><input type="password" name="senhaEnt" placeholder="********"></td>
+                          <th colspan="2"><asp:label id="MNSI" style="visibility: hidden" runat="server" BackColor="#6600FF" BorderColor="#FF9966">Seu nome de usuário está incompleto</asp:label></th>
                       </tr>
 
                       <tr>
-                        <td colspan="2"><input type="submit" name="entrar" class="btnEntrar" value="Entrar"></td>
+                          <th>Senha:</th><td><asp:TextBox runat="server" id="txtSenha" type="password" name="senhaEnt" placeholder="********" ></asp:TextBox></td>
+                      </tr>
+                      
+                      <tr>
+                          <th colspan="2"><asp:label id="MSI" style="visibility: hidden" runat="server">Sua senha está incompleta</asp:label></th>
+                      </tr>
+
+                      <tr>
+                          <td colspan="2"><asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" /></td>
+                      </tr>
+
+                      <tr>
+                          <th colspan="2"><asp:label id="MUNSI" style="visibility: hidden" runat="server" BackColor="Black" BorderColor="#33CC33">Usuário ou senha incorretos</asp:label></th>
+                          <th colspan="2"><asp:label id="MEC" style="visibility: hidden" runat="server">Ocorreu um erro de conexão</asp:label></th>
                       </tr>
                     </table>
                 </div>
@@ -53,8 +66,6 @@
         </section>
 
         <section>
-
-            <div class="filtro"></div>
             <img id="imagem" class="ponte">
             <div class="logo"><a class="meio">Emilhão</a></div>
             <center>
@@ -68,7 +79,7 @@
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
         </asp:ContentPlaceHolder>
-    </div>
+        </div>
     </form>
 </body>
 </html>
