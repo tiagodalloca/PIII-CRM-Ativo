@@ -90,7 +90,7 @@ body {
 .ponte {
     position: absolute;
     left: 0%;
-    top: -2147483648%;
+    top: 0%;
     border-radius: 15px;
     background-image: url('emilhao.jpg');
     background-size: cover;
