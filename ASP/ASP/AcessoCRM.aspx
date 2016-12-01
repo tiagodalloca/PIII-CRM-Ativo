@@ -12,8 +12,10 @@
         }
         ul{
             position: relative;
-            left: 190px;
-          }
+            left: 25px;
+            top: 1px;
+            width: 1081px;
+        }
         ul2
         {
             position : relative;
@@ -31,7 +33,7 @@
     <p>
         &nbsp;&nbsp;&nbsp;
 
-        <ul2> <font size="6">Informações do Atendimento : <br><br></font></ul2>
+        <ul2> <font size="6">Informações do atendimento : <br><br></font></ul2>
         <ul>
         <asp:GridView ID="id1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="idAtendimento" DataSourceID="dt1" GridLines="Vertical"  Width="1px" Height="1px">
             <AlternatingRowStyle BackColor="#DCDCDC" />

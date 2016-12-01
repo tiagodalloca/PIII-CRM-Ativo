@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AlterClienteCRM.aspx" />
     <Content Include="AcessoCRM.aspx" />
     <Content Include="CadastroCRM.aspx" />
     <Content Include="js.js" />
@@ -76,6 +77,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlterClienteCRM.aspx.cs">
+      <DependentUpon>AlterClienteCRM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlterClienteCRM.aspx.designer.cs">
+      <DependentUpon>AlterClienteCRM.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AcessoCRM.aspx.cs">
       <DependentUpon>AcessoCRM.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
