@@ -239,6 +239,7 @@ center {
 }
 p {
     text-align: left;
+    margin-left: 40px;
 }
 .aperte: hover {
     color: rgba(42, 188, 148, 1);

@@ -31,15 +31,6 @@ namespace ASP {
         protected global::System.Web.UI.WebControls.SqlDataSource dt1;
         
         /// <summary>
-        /// txtIDCli control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIDCli;
-        
-        /// <summary>
         /// txtCPFCli control.
         /// </summary>
         /// <remarks>
@@ -146,5 +137,23 @@ namespace ASP {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnAlterarCli;
+        
+        /// <summary>
+        /// txtIDCli control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIDCli;
+        
+        /// <summary>
+        /// btnID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnID;
     }
 }

@@ -24,8 +24,8 @@
 
         .praBaixo {
             position : relative;
-            top: 212px;
-            left: 0px;
+            top: 346px;
+            left: -6px;
         }
         
         .auto-style1 {
@@ -111,7 +111,7 @@
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 central">
             <table class="table auto-style1 praBaixo">
                 <tr>
-                    <td class="auto-style2">ID do cliente</td>
+                    <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style3">CNPJ ou CPF</td>
                     <td class="auto-style4">Nome</td>
                     <td class="auto-style5">Endereço</td>
@@ -126,8 +126,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-                        <asp:TextBox ID="txtIDCli" runat="server" OnTextChanged="txtIDCli_TextChanged"></asp:TextBox>
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style3">
                         <asp:TextBox ID="txtCPFCli" runat="server"></asp:TextBox>
                     </td>
@@ -166,12 +165,22 @@
             &nbsp;<asp:Button class="praBaixo" ID="btnAlterarCli" runat="server" OnClick="btnAlterarCli_Click1" Text="Alterar" />
        </div>
     </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+    <br />
+        <asp:TextBox ID="txtIDCli" runat="server" OnTextChanged="txtIDCli_TextChanged"></asp:TextBox>
+    </p>
+    <p>
+    <br />
+        <asp:Button ID="btnID" runat="server" Text="Procurar ID" />
     <br />
     <br />
     <br />
     <br />
     <br />
     <br />
-    <br />
-    <br />
+    </p>
     </asp:Content>
