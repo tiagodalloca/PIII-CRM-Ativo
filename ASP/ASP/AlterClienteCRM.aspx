@@ -24,7 +24,8 @@
 
         .praBaixo {
             position : relative;
-            top: 130px;
+            top: 212px;
+            left: 0px;
         }
         
         .auto-style1 {
@@ -162,7 +163,15 @@
                     </td>
                 </tr>
             </table>
-            &nbsp;<asp:Button class="praBaixo" ID="btnAlterarCli" runat="server" OnClick="btnAlterarCli_Click" Text="Button" />
+            &nbsp;<asp:Button class="praBaixo" ID="btnAlterarCli" runat="server" OnClick="btnAlterarCli_Click1" Text="Alterar" />
        </div>
     </p>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     </asp:Content>
