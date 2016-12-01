@@ -12,14 +12,19 @@
         }
         ul{
             position: relative;
-            left: 175px;
-            top: 0px;
+            left: -41px;
+            top: -4px;
             width: 828px;
         }
         ul2
         {
             position : relative;
             left : 570px;
+        }
+
+        .praBaixo {
+            position : relative;
+            top: 130px;
         }
         
         .auto-style1 {
@@ -102,60 +107,62 @@
             <SortedDescendingHeaderStyle BackColor="#000065" />
         </asp:GridView></ul>
         <asp:SqlDataSource ID="dt1" runat="server" ConnectionString="<%$ ConnectionStrings:ERPConnectionString %>" SelectCommand="SELECT * FROM [Cliente] ORDER BY [idCliente]"></asp:SqlDataSource>
-        <table class="auto-style1">
-            <tr>
-                <td class="auto-style2">ID do cliente</td>
-                <td class="auto-style3">CNPJ ou CPF</td>
-                <td class="auto-style4">Nome</td>
-                <td class="auto-style5">Endereço</td>
-                <td class="auto-style6">Email</td>
-                <td class="auto-style7">Telefone</td>
-                <td class="auto-style8">Celular</td>
-                <td class="auto-style9">Data de nascimento</td>
-                <td class="auto-style10">Site</td>
-                <td class="auto-style11">RG</td>
-                <td class="auto-style12">Sexo</td>
-                <td class="auto-style13">É VIP?</td>
-            </tr>
-            <tr>
-                <td class="auto-style2">
-                    <asp:TextBox ID="txtIDCli" runat="server" OnTextChanged="txtIDCli_TextChanged"></asp:TextBox>
-                </td>
-                <td class="auto-style3">
-                    <asp:TextBox ID="txtCPFCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style4">
-                    <asp:TextBox ID="txtDescCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style5">
-                    <asp:TextBox ID="txtEndCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style6">
-                    <asp:TextBox ID="txtEmailCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style7">
-                    <asp:TextBox ID="txtTelCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style8">
-                    <asp:TextBox ID="txtCelCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style9">
-                    <asp:TextBox ID="txtDataCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style10">
-                    <asp:TextBox ID="txtSiteCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style11">
-                    <asp:TextBox ID="txtRGCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style12">
-                    <asp:TextBox ID="txtSexoCli" runat="server"></asp:TextBox>
-                </td>
-                <td class="auto-style13">
-                    <asp:TextBox ID="txtVIPCli" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-    </table>
-        &nbsp;<asp:Button ID="btnAlterarCli" runat="server" OnClick="btnAlterarCli_Click" Text="Button" />
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 central">
+            <table class="table auto-style1 praBaixo">
+                <tr>
+                    <td class="auto-style2">ID do cliente</td>
+                    <td class="auto-style3">CNPJ ou CPF</td>
+                    <td class="auto-style4">Nome</td>
+                    <td class="auto-style5">Endereço</td>
+                    <td class="auto-style6">Email</td>
+                    <td class="auto-style7">Telefone</td>
+                    <td class="auto-style8">Celular</td>
+                    <td class="auto-style9">Data de nascimento</td>
+                    <td class="auto-style10">Site</td>
+                    <td class="auto-style11">RG</td>
+                    <td class="auto-style12">Sexo</td>
+                    <td class="auto-style13">É VIP?</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:TextBox ID="txtIDCli" runat="server" OnTextChanged="txtIDCli_TextChanged"></asp:TextBox>
+                    </td>
+                    <td class="auto-style3">
+                        <asp:TextBox ID="txtCPFCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style4">
+                        <asp:TextBox ID="txtDescCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:TextBox ID="txtEndCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:TextBox ID="txtEmailCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:TextBox ID="txtTelCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style8">
+                        <asp:TextBox ID="txtCelCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style9">
+                        <asp:TextBox ID="txtDataCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style10">
+                        <asp:TextBox ID="txtSiteCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style11">
+                        <asp:TextBox ID="txtRGCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style12">
+                        <asp:TextBox ID="txtSexoCli" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style13">
+                        <asp:TextBox ID="txtVIPCli" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+            </table>
+            &nbsp;<asp:Button class="praBaixo" ID="btnAlterarCli" runat="server" OnClick="btnAlterarCli_Click" Text="Button" />
+       </div>
     </p>
     </asp:Content>

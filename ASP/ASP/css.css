@@ -29,6 +29,11 @@ body {
     transition-duration: 0.3s;
     z-index: 1000;
 }
+.central {
+    position:relative;
+  left: 50%; 
+  transform: translateX(-50%);
+}
 .fixo {
     position: fixed;
     width: 100%;

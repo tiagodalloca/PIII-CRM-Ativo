@@ -57,11 +57,15 @@ namespace ASP
                         txtSexoCli.Text = (string)dt[10];
                         txtVIPCli.Text = (string)dt[11];
                     }
-                }
 
-                // fecha a conexão
-                dt.Close();
-                conn.Close();
+                    // fecha a conexão
+                    dt.Close();
+                    conn.Close();
+                }
+            }
+            catch (Exception er)
+            {
+                Response.Write("<script>alert('"+er.ToString()+"');</script>");
             }
         }
     }
