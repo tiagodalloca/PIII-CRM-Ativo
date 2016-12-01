@@ -4,3 +4,8 @@
     if (divEnt.style.visibility == 'hidden') divEnt.style.visibility = 'visible';
     else divEnt.style.visibility = 'hidden';
 }
+
+function deslog()
+{
+    alert("Você está deslogado.");
+}

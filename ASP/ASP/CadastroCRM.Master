@@ -17,16 +17,10 @@
         <section>
             <div id="menu" class="menu">
                 <div id="item_menu1" class="item_menu">
-                    <div class="celula">O ERP</div>
+                    <a href="CadastroCRM.aspx" class="celula">Cadastros</a>
                 </div>
                 <div id="item_menu2" class="item_menu">
-                    <div class="celula">Mude seu milho</div>
-                </div>
-                <div id="item_menu3" class="item_menu">
-                    <div class="celula">Cadastros</div>
-                </div>
-                <div id="item_menu4" class="item_menu">
-                    <div class="celula">Acesso ao Atendimento</div>
+                    <a href="AcessoCRM.aspx" class="celula">Acesso ao Atendimento</a>
                 </div>
             </div>
         </section>
