@@ -11,7 +11,7 @@
 
     <link href="css.css" rel="stylesheet" />
 </head>
-<body background="emilhao.jpg">
+<body>
     <form id="form1" runat="server">
     <div>
         <section>
@@ -35,6 +35,6 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-    
+
 </body>
 </html>

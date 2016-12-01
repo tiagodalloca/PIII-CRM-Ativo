@@ -89,8 +89,8 @@ body {
 }
 .ponte {
     position: absolute;
-    left: 0%;
-    top: 0%;
+    left: 5%;
+    top: 15%;
     border-radius: 15px;
     background-image: url('emilhao.jpg');
     background-size: cover;
@@ -253,7 +253,7 @@ p {
 .btnEntrar {
 	position: relative;
 	top: 50%;
-	left: 50%;	
+	left: 50%;
     transform: translateX(-50%) translateY(-10%);
 	padding: 5px 50px;
 	border: 1px solid black;
