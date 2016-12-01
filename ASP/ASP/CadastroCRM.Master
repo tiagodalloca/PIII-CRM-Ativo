@@ -22,6 +22,9 @@
                 <div id="item_menu2" class="item_menu">
                     <a href="AcessoCRM.aspx" class="celula">Acesso ao Atendimento</a>
                 </div>
+                <div id="item_menu3" class="item_menu">
+                    <a href="AlterClienteCRM.aspx" class="celula">Acesso ao Atendimento</a>
+                </div>
             </div>
         </section>
 
